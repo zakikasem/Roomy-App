@@ -1,0 +1,495 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E20BF242237C6E1B006AD865 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20BF241237C6E1B006AD865 /* SignUpViewController.swift */; };
+		E2121A632368754C001757B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2121A622368754C001757B8 /* AppDelegate.swift */; };
+		E2121A652368754C001757B8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2121A642368754C001757B8 /* SceneDelegate.swift */; };
+		E2121A672368754C001757B8 /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2121A662368754C001757B8 /* LandingViewController.swift */; };
+		E2121A6A2368754C001757B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2121A682368754C001757B8 /* Main.storyboard */; };
+		E2121A6C2368754D001757B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2121A6B2368754D001757B8 /* Assets.xcassets */; };
+		E2121A6F2368754D001757B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2121A6D2368754D001757B8 /* LaunchScreen.storyboard */; };
+		E2121A7723688B1C001757B8 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2121A7623688B1C001757B8 /* SignInViewController.swift */; };
+		E2848DCC236ADEF3006DFE74 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2848DCB236ADEF3006DFE74 /* HomeViewController.swift */; };
+		E2848DCF236ADF77006DFE74 /* HomeCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2848DCD236ADF77006DFE74 /* HomeCells.swift */; };
+		E2848DD0236ADF77006DFE74 /* HomeCells.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2848DCE236ADF77006DFE74 /* HomeCells.xib */; };
+		E2ABCA5823823608002DC068 /* Network Layer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2ABCA5723823608002DC068 /* Network Layer.swift */; };
+		E2ABCA5A2382F3C3002DC068 /* AuthRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2ABCA592382F3C3002DC068 /* AuthRouter.swift */; };
+		E2B0992B236AF6D600DE19F9 /* ListingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B0992A236AF6D600DE19F9 /* ListingViewController.swift */; };
+		E2D263C423ACED5E00B61200 /* LoginPresenterImplementaion.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D263C323ACED5E00B61200 /* LoginPresenterImplementaion.swift */; };
+		E2D263C623AD01E000B61200 /* RoomFetchingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D263C523AD01E000B61200 /* RoomFetchingPresenter.swift */; };
+		E2D263EB23AF8FE300B61200 /* SignUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D263EA23AF8FE300B61200 /* SignUpPresenter.swift */; };
+		E2E9627423968F5A003E4FB1 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E9627323968F5A003E4FB1 /* Model.swift */; };
+		E2EDEEB923B7641400DD78F0 /* ServerResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EDEEB823B7641400DD78F0 /* ServerResponse.swift */; };
+		F477EE7E20F6BC5EB2CFF028 /* Pods_Roomy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DE3536FE13E3B3F055B9CB9 /* Pods_Roomy.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		13B49B26D8A028B2986EDFC1 /* Pods-Roomy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Roomy.debug.xcconfig"; path = "Target Support Files/Pods-Roomy/Pods-Roomy.debug.xcconfig"; sourceTree = "<group>"; };
+		5DE3536FE13E3B3F055B9CB9 /* Pods_Roomy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Roomy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		83138A7E7ABE6EB59BBFF352 /* Pods-Roomy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Roomy.release.xcconfig"; path = "Target Support Files/Pods-Roomy/Pods-Roomy.release.xcconfig"; sourceTree = "<group>"; };
+		E20BF241237C6E1B006AD865 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		E2121A5F2368754C001757B8 /* Roomy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Roomy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2121A622368754C001757B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E2121A642368754C001757B8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E2121A662368754C001757B8 /* LandingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
+		E2121A692368754C001757B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E2121A6B2368754D001757B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E2121A6E2368754D001757B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E2121A702368754D001757B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2121A7623688B1C001757B8 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		E2848DCB236ADEF3006DFE74 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		E2848DCD236ADF77006DFE74 /* HomeCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCells.swift; sourceTree = "<group>"; };
+		E2848DCE236ADF77006DFE74 /* HomeCells.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCells.xib; sourceTree = "<group>"; };
+		E2ABCA5723823608002DC068 /* Network Layer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Network Layer.swift"; sourceTree = "<group>"; };
+		E2ABCA592382F3C3002DC068 /* AuthRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRouter.swift; sourceTree = "<group>"; };
+		E2B0992A236AF6D600DE19F9 /* ListingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingViewController.swift; sourceTree = "<group>"; };
+		E2D263C323ACED5E00B61200 /* LoginPresenterImplementaion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenterImplementaion.swift; sourceTree = "<group>"; };
+		E2D263C523AD01E000B61200 /* RoomFetchingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomFetchingPresenter.swift; sourceTree = "<group>"; };
+		E2D263EA23AF8FE300B61200 /* SignUpPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPresenter.swift; sourceTree = "<group>"; };
+		E2E9627323968F5A003E4FB1 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		E2EDEEB823B7641400DD78F0 /* ServerResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerResponse.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E2121A5C2368754C001757B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F477EE7E20F6BC5EB2CFF028 /* Pods_Roomy.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5083DE1EF7970297733F676C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5DE3536FE13E3B3F055B9CB9 /* Pods_Roomy.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DC8144E5BED3BB546011381F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				13B49B26D8A028B2986EDFC1 /* Pods-Roomy.debug.xcconfig */,
+				83138A7E7ABE6EB59BBFF352 /* Pods-Roomy.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E2121A562368754C001757B8 = {
+			isa = PBXGroup;
+			children = (
+				E2ABCA56238235E8002DC068 /* Network Manager */,
+				E2121A612368754C001757B8 /* Roomy */,
+				E2121A602368754C001757B8 /* Products */,
+				DC8144E5BED3BB546011381F /* Pods */,
+				5083DE1EF7970297733F676C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E2121A602368754C001757B8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E2121A5F2368754C001757B8 /* Roomy.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E2121A612368754C001757B8 /* Roomy */ = {
+			isa = PBXGroup;
+			children = (
+				E2121A622368754C001757B8 /* AppDelegate.swift */,
+				E2121A642368754C001757B8 /* SceneDelegate.swift */,
+				E2121A682368754C001757B8 /* Main.storyboard */,
+				E2121A6B2368754D001757B8 /* Assets.xcassets */,
+				E2121A6D2368754D001757B8 /* LaunchScreen.storyboard */,
+				E2121A702368754D001757B8 /* Info.plist */,
+			);
+			path = Roomy;
+			sourceTree = "<group>";
+		};
+		E2AA10E923A283E10022F4AD /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E2121A662368754C001757B8 /* LandingViewController.swift */,
+				E2121A7623688B1C001757B8 /* SignInViewController.swift */,
+				E20BF241237C6E1B006AD865 /* SignUpViewController.swift */,
+				E2848DCB236ADEF3006DFE74 /* HomeViewController.swift */,
+				E2B0992A236AF6D600DE19F9 /* ListingViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		E2AA10EA23A283FF0022F4AD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E2E9627323968F5A003E4FB1 /* Model.swift */,
+				E2EDEEB823B7641400DD78F0 /* ServerResponse.swift */,
+				E2848DCD236ADF77006DFE74 /* HomeCells.swift */,
+				E2848DCE236ADF77006DFE74 /* HomeCells.xib */,
+				E2D263C723AD026700B61200 /* Presenters */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E2ABCA56238235E8002DC068 /* Network Manager */ = {
+			isa = PBXGroup;
+			children = (
+				E2ABCA5723823608002DC068 /* Network Layer.swift */,
+				E2ABCA592382F3C3002DC068 /* AuthRouter.swift */,
+				E2AA10EA23A283FF0022F4AD /* Model */,
+				E2AA10E923A283E10022F4AD /* Controllers */,
+			);
+			path = "Network Manager";
+			sourceTree = "<group>";
+		};
+		E2D263C723AD026700B61200 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				E2D263C323ACED5E00B61200 /* LoginPresenterImplementaion.swift */,
+				E2D263EA23AF8FE300B61200 /* SignUpPresenter.swift */,
+				E2D263C523AD01E000B61200 /* RoomFetchingPresenter.swift */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E2121A5E2368754C001757B8 /* Roomy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2121A732368754D001757B8 /* Build configuration list for PBXNativeTarget "Roomy" */;
+			buildPhases = (
+				80C4E2B4EA1F5219E314053D /* [CP] Check Pods Manifest.lock */,
+				E2121A5B2368754C001757B8 /* Sources */,
+				E2121A5C2368754C001757B8 /* Frameworks */,
+				E2121A5D2368754C001757B8 /* Resources */,
+				27D97E5B81B89780DA55342F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Roomy;
+			productName = Roomy;
+			productReference = E2121A5F2368754C001757B8 /* Roomy.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E2121A572368754C001757B8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = AHMED;
+				TargetAttributes = {
+					E2121A5E2368754C001757B8 = {
+						CreatedOnToolsVersion = 11.1;
+					};
+				};
+			};
+			buildConfigurationList = E2121A5A2368754C001757B8 /* Build configuration list for PBXProject "Roomy" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E2121A562368754C001757B8;
+			productRefGroup = E2121A602368754C001757B8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E2121A5E2368754C001757B8 /* Roomy */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E2121A5D2368754C001757B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2121A6F2368754D001757B8 /* LaunchScreen.storyboard in Resources */,
+				E2121A6C2368754D001757B8 /* Assets.xcassets in Resources */,
+				E2848DD0236ADF77006DFE74 /* HomeCells.xib in Resources */,
+				E2121A6A2368754C001757B8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		27D97E5B81B89780DA55342F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Roomy/Pods-Roomy-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Roomy/Pods-Roomy-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Roomy/Pods-Roomy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		80C4E2B4EA1F5219E314053D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Roomy-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E2121A5B2368754C001757B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2121A672368754C001757B8 /* LandingViewController.swift in Sources */,
+				E2848DCC236ADEF3006DFE74 /* HomeViewController.swift in Sources */,
+				E2ABCA5A2382F3C3002DC068 /* AuthRouter.swift in Sources */,
+				E20BF242237C6E1B006AD865 /* SignUpViewController.swift in Sources */,
+				E2EDEEB923B7641400DD78F0 /* ServerResponse.swift in Sources */,
+				E2D263EB23AF8FE300B61200 /* SignUpPresenter.swift in Sources */,
+				E2121A632368754C001757B8 /* AppDelegate.swift in Sources */,
+				E2121A7723688B1C001757B8 /* SignInViewController.swift in Sources */,
+				E2848DCF236ADF77006DFE74 /* HomeCells.swift in Sources */,
+				E2B0992B236AF6D600DE19F9 /* ListingViewController.swift in Sources */,
+				E2E9627423968F5A003E4FB1 /* Model.swift in Sources */,
+				E2D263C423ACED5E00B61200 /* LoginPresenterImplementaion.swift in Sources */,
+				E2D263C623AD01E000B61200 /* RoomFetchingPresenter.swift in Sources */,
+				E2ABCA5823823608002DC068 /* Network Layer.swift in Sources */,
+				E2121A652368754C001757B8 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E2121A682368754C001757B8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E2121A692368754C001757B8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E2121A6D2368754D001757B8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E2121A6E2368754D001757B8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E2121A712368754D001757B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E2121A722368754D001757B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E2121A742368754D001757B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13B49B26D8A028B2986EDFC1 /* Pods-Roomy.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Roomy/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jobless.Roomy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E2121A752368754D001757B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83138A7E7ABE6EB59BBFF352 /* Pods-Roomy.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Roomy/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jobless.Roomy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E2121A5A2368754C001757B8 /* Build configuration list for PBXProject "Roomy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2121A712368754D001757B8 /* Debug */,
+				E2121A722368754D001757B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E2121A732368754D001757B8 /* Build configuration list for PBXNativeTarget "Roomy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2121A742368754D001757B8 /* Debug */,
+				E2121A752368754D001757B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E2121A572368754C001757B8 /* Project object */;
+}
