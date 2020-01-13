@@ -8,15 +8,22 @@
 
 import Foundation
 protocol RoomFetching {
-    var RoomView:HomeView! {get set}
+    var RoomView : HomeView! {get set}
     
     func fetchRooms()
     func getRoomsCount() -> Int
     func getItem(atIndex: Int) -> RoomData
+    func whenRowSelected(room : RoomData)
 }
 
 class RoomFetchingPresenter:RoomFetching {
     weak var RoomView: HomeView!
+    let router : HomeRouter!
+    
+    init(RoomView : HomeView , router : HomeRouter ) {
+        self.RoomView = RoomView
+        self.router = router
+    }
     
     
     private var rooms = [RoomData]()
@@ -35,5 +42,10 @@ class RoomFetchingPresenter:RoomFetching {
     func getItem(atIndex: Int) -> RoomData {
         return rooms[atIndex]
     }
+    func whenRowSelected (room: RoomData) {
+        self.router.navigateToListingViewController(room: RoomData)
+        
+    }
+    
     
 }

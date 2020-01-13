@@ -7,22 +7,30 @@
 //
 import Foundation
 protocol LoginPresenter {
-    var LoginView:LoginView! {get set}
+    var loginView:LoginView! {get set}
     func login (email:String,password:String)
 }
 class LoginPresenterImplementation:LoginPresenter {
-    weak var LoginView: LoginView!
+    var router : LoginRouter!
+    weak var loginView: LoginView!
+    
+    init (loginView : LoginView , router : LoginRouter  ){
+        self.loginView = loginView
+        self.router = router
+        
+        
+    }
     func login(email: String, password: String) {
         NetworkManager.login(email: email, password: password) { responseServer,Error  in
             guard let ServerResponse = responseServer else {return}
             if ServerResponse.message == "Invalid credentials" {
-                self.LoginView.showAlert()
-                self.LoginView.hideIndicator()
+                self.loginView.showAlert()
+                self.loginView.hideIndicator()
             }
             else {
                 let Token = ServerResponse.auth_token
                 UserDefaults.standard.set(Token, forKey: "Token")
-                self.LoginView.navigateToHomeVC()
+                self.router.navigateToHomeVC()
             }
             
         }

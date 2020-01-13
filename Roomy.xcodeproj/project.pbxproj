@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D0C64E123C5746D0022FF78 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0C64E023C5746D0022FF78 /* LoginRouter.swift */; };
+		3D0C64E323C65ECC0022FF78 /* SignUpRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0C64E223C65ECC0022FF78 /* SignUpRouter.swift */; };
+		3D0FB63F23CBEC62003524DA /* HomeRouterImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0FB63E23CBEC62003524DA /* HomeRouterImplementation.swift */; };
 		E20BF242237C6E1B006AD865 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20BF241237C6E1B006AD865 /* SignUpViewController.swift */; };
 		E2121A632368754C001757B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2121A622368754C001757B8 /* AppDelegate.swift */; };
 		E2121A652368754C001757B8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2121A642368754C001757B8 /* SceneDelegate.swift */; };
@@ -31,6 +34,9 @@
 
 /* Begin PBXFileReference section */
 		13B49B26D8A028B2986EDFC1 /* Pods-Roomy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Roomy.debug.xcconfig"; path = "Target Support Files/Pods-Roomy/Pods-Roomy.debug.xcconfig"; sourceTree = "<group>"; };
+		3D0C64E023C5746D0022FF78 /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		3D0C64E223C65ECC0022FF78 /* SignUpRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpRouter.swift; sourceTree = "<group>"; };
+		3D0FB63E23CBEC62003524DA /* HomeRouterImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouterImplementation.swift; sourceTree = "<group>"; };
 		5DE3536FE13E3B3F055B9CB9 /* Pods_Roomy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Roomy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		83138A7E7ABE6EB59BBFF352 /* Pods-Roomy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Roomy.release.xcconfig"; path = "Target Support Files/Pods-Roomy/Pods-Roomy.release.xcconfig"; sourceTree = "<group>"; };
 		E20BF241237C6E1B006AD865 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -68,6 +74,73 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D0FB63623CBE81A003524DA /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				3D0FB63A23CBE8CA003524DA /* LandingViewController */,
+				3D0FB63723CBE840003524DA /* Sign in */,
+				3D0FB63823CBE862003524DA /* Sign up */,
+				3D0FB63923CBE8A0003524DA /* Home  */,
+				3D0FB63B23CBE8DF003524DA /* ListingViewController */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		3D0FB63723CBE840003524DA /* Sign in */ = {
+			isa = PBXGroup;
+			children = (
+				E2121A7623688B1C001757B8 /* SignInViewController.swift */,
+				E2D263C323ACED5E00B61200 /* LoginPresenterImplementaion.swift */,
+				3D0C64E023C5746D0022FF78 /* LoginRouter.swift */,
+			);
+			path = "Sign in";
+			sourceTree = "<group>";
+		};
+		3D0FB63823CBE862003524DA /* Sign up */ = {
+			isa = PBXGroup;
+			children = (
+				E20BF241237C6E1B006AD865 /* SignUpViewController.swift */,
+				E2D263EA23AF8FE300B61200 /* SignUpPresenter.swift */,
+				3D0C64E223C65ECC0022FF78 /* SignUpRouter.swift */,
+			);
+			path = "Sign up";
+			sourceTree = "<group>";
+		};
+		3D0FB63923CBE8A0003524DA /* Home  */ = {
+			isa = PBXGroup;
+			children = (
+				E2848DCB236ADEF3006DFE74 /* HomeViewController.swift */,
+				E2D263C523AD01E000B61200 /* RoomFetchingPresenter.swift */,
+				3D0FB63E23CBEC62003524DA /* HomeRouterImplementation.swift */,
+			);
+			path = "Home ";
+			sourceTree = "<group>";
+		};
+		3D0FB63A23CBE8CA003524DA /* LandingViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E2121A662368754C001757B8 /* LandingViewController.swift */,
+			);
+			path = LandingViewController;
+			sourceTree = "<group>";
+		};
+		3D0FB63B23CBE8DF003524DA /* ListingViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E2B0992A236AF6D600DE19F9 /* ListingViewController.swift */,
+			);
+			path = ListingViewController;
+			sourceTree = "<group>";
+		};
+		3D0FB63C23CBEA63003524DA /* App Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				E2121A622368754C001757B8 /* AppDelegate.swift */,
+				E2121A642368754C001757B8 /* SceneDelegate.swift */,
+			);
+			path = "App Delegate";
+			sourceTree = "<group>";
+		};
 		5083DE1EF7970297733F676C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -88,7 +161,10 @@
 		E2121A562368754C001757B8 = {
 			isa = PBXGroup;
 			children = (
+				3D0FB63623CBE81A003524DA /* Module */,
 				E2ABCA56238235E8002DC068 /* Network Manager */,
+				E2AA10EA23A283FF0022F4AD /* Model */,
+				3D0FB63C23CBEA63003524DA /* App Delegate */,
 				E2121A612368754C001757B8 /* Roomy */,
 				E2121A602368754C001757B8 /* Products */,
 				DC8144E5BED3BB546011381F /* Pods */,
@@ -107,26 +183,12 @@
 		E2121A612368754C001757B8 /* Roomy */ = {
 			isa = PBXGroup;
 			children = (
-				E2121A622368754C001757B8 /* AppDelegate.swift */,
-				E2121A642368754C001757B8 /* SceneDelegate.swift */,
 				E2121A682368754C001757B8 /* Main.storyboard */,
 				E2121A6B2368754D001757B8 /* Assets.xcassets */,
 				E2121A6D2368754D001757B8 /* LaunchScreen.storyboard */,
 				E2121A702368754D001757B8 /* Info.plist */,
 			);
 			path = Roomy;
-			sourceTree = "<group>";
-		};
-		E2AA10E923A283E10022F4AD /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				E2121A662368754C001757B8 /* LandingViewController.swift */,
-				E2121A7623688B1C001757B8 /* SignInViewController.swift */,
-				E20BF241237C6E1B006AD865 /* SignUpViewController.swift */,
-				E2848DCB236ADEF3006DFE74 /* HomeViewController.swift */,
-				E2B0992A236AF6D600DE19F9 /* ListingViewController.swift */,
-			);
-			path = Controllers;
 			sourceTree = "<group>";
 		};
 		E2AA10EA23A283FF0022F4AD /* Model */ = {
@@ -136,7 +198,6 @@
 				E2EDEEB823B7641400DD78F0 /* ServerResponse.swift */,
 				E2848DCD236ADF77006DFE74 /* HomeCells.swift */,
 				E2848DCE236ADF77006DFE74 /* HomeCells.xib */,
-				E2D263C723AD026700B61200 /* Presenters */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -146,20 +207,8 @@
 			children = (
 				E2ABCA5723823608002DC068 /* Network Layer.swift */,
 				E2ABCA592382F3C3002DC068 /* AuthRouter.swift */,
-				E2AA10EA23A283FF0022F4AD /* Model */,
-				E2AA10E923A283E10022F4AD /* Controllers */,
 			);
 			path = "Network Manager";
-			sourceTree = "<group>";
-		};
-		E2D263C723AD026700B61200 /* Presenters */ = {
-			isa = PBXGroup;
-			children = (
-				E2D263C323ACED5E00B61200 /* LoginPresenterImplementaion.swift */,
-				E2D263EA23AF8FE300B61200 /* SignUpPresenter.swift */,
-				E2D263C523AD01E000B61200 /* RoomFetchingPresenter.swift */,
-			);
-			path = Presenters;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -283,7 +332,10 @@
 				E2ABCA5A2382F3C3002DC068 /* AuthRouter.swift in Sources */,
 				E20BF242237C6E1B006AD865 /* SignUpViewController.swift in Sources */,
 				E2EDEEB923B7641400DD78F0 /* ServerResponse.swift in Sources */,
+				3D0FB63F23CBEC62003524DA /* HomeRouterImplementation.swift in Sources */,
 				E2D263EB23AF8FE300B61200 /* SignUpPresenter.swift in Sources */,
+				3D0C64E323C65ECC0022FF78 /* SignUpRouter.swift in Sources */,
+				3D0C64E123C5746D0022FF78 /* LoginRouter.swift in Sources */,
 				E2121A632368754C001757B8 /* AppDelegate.swift in Sources */,
 				E2121A7723688B1C001757B8 /* SignInViewController.swift in Sources */,
 				E2848DCF236ADF77006DFE74 /* HomeCells.swift in Sources */,

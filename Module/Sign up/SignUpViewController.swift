@@ -8,13 +8,14 @@
 
 import UIKit
 import Alamofire
-protocol signUpView:class {
-    func navigateToSignInVC()
+protocol SignUpView:class {
+    //func navigateToSignInVC()
     func hideIndicator()
-    func showAlert()
+    //func showAlert()
 }
-class SignUpViewController: UIViewController,signUpView{
+class SignUpViewController: UIViewController,SignUpView{
     var presenter:signUpPresenterImplementation!
+    
     @IBOutlet weak var nameLabel: UITextField!
     @IBOutlet weak var emailLabel: UITextField!
     @IBOutlet weak var passwordLabel: UITextField!
@@ -25,8 +26,11 @@ class SignUpViewController: UIViewController,signUpView{
         let signUp = SignInViewController()
         signUp.roundedBttnWithShadow(Bttn: signUpBttn)
         self.hideKeyboardWhenTappedAround()
-        presenter = signUpPresenterImplementation()
-        presenter.signUpView = self
+        
+        let router = SignUpRouterImplementation(signUpViewController: self)
+        presenter = signUpPresenterImplementation(signUpView : self , router: router)
+        //presenter = signUpPresenterImplementation()
+        //presenter.signUpView = self
         hideIndicator()
     }
     
@@ -44,21 +48,15 @@ class SignUpViewController: UIViewController,signUpView{
         }
     }
     
-    func navigateToSignInVC() {
-        self.navigationController?.popViewController(animated: true)
+   func navigateToSignInVC() {
+        //self.navigationController?.popViewController(animated: true)
     }
     func hideIndicator() {
         signUpLoadingIndicator.isHidden = true
     }
-    func showAlert() {
-        let Alert = UIAlertController(title: "Successful Operation", message: "Your account has been successfully created!", preferredStyle: .alert)
-        let Action = UIAlertAction(title: "Ok", style: .default) { (Action) in
-            self.navigateToSignInVC()
+   
 
-        }
-        Alert.addAction(Action)
-        present(Alert,animated: true,completion: nil)
-    }
+    
 
     
 }

@@ -9,7 +9,7 @@
 import UIKit
 import Alamofire
 protocol LoginView:class {
-    func navigateToHomeVC ()
+    //func navigateToHomeVC ()
     func showAlert()
     func hideIndicator()
 }
@@ -56,8 +56,10 @@ class SignInViewController: UIViewController,LoginView{
         circleOval(viewType: OvalView4)
         self.hideKeyboardWhenTappedAround()
         self.navigationController?.isNavigationBarHidden = true
-        presenter = LoginPresenterImplementation()
-        presenter.LoginView = self
+       // presenter = LoginPresenterImplementation()
+       // presenter.LoginView = self
+        let router = LoginRouterImplementation(signInViewController: self)
+        presenter = LoginPresenterImplementation(loginView: self, router: router)
         hideIndicator()
     }
     
@@ -80,11 +82,11 @@ class SignInViewController: UIViewController,LoginView{
         viewType.layer.shadowOpacity = 0.5
         viewType.layer.shadowOffset = CGSize(width: 0, height: 1)
     }
-    func navigateToHomeVC() {
-        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
-        let homeViewController = storyBoard.instantiateViewController(identifier: "homeVC") as! HomeViewController
-        self.navigationController?.pushViewController(homeViewController, animated: true)
-    }
+    //func navigateToHomeVC() {
+        //let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+       // let homeViewController = storyBoard.instantiateViewController(identifier: "homeVC") as! HomeViewController
+       // self.navigationController?.pushViewController(homeViewController, animated: true)
+    //}
     
     func showAlert() {
         let Alert = UIAlertController(title: "Wrong data", message: "You have entered wrong username or password", preferredStyle: .alert)

@@ -8,16 +8,18 @@
 
 import UIKit
 import Kingfisher
+
 protocol fromHomeToListingProtocol {
     func setImage (Image:String)
 }
-protocol HomeView:AnyObject{
+protocol HomeView : AnyObject{
     func reloadData()
 }
 
 class HomeViewController: UIViewController,HomeView {
-    var homeToListingDelegate:fromHomeToListingProtocol?
+    var homeToListingDelegate:fromHomeToListingProtocol!
     var presenter:RoomFetching!
+
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -33,9 +35,10 @@ class HomeViewController: UIViewController,HomeView {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        presenter = RoomFetchingPresenter()
-        presenter.RoomView = self
+        let router = HomeRouterImplementation(homeViewController :self)
+        presenter = RoomFetchingPresenter(RoomView : self , router : router )
+       // presenter = RoomFetchingPresenter()
+        //presenter.RoomView = self
         tableView.register(UINib(nibName: "HomeCells", bundle: nil), forCellReuseIdentifier: "MyCell")
         tableView.delegate = self
         tableView.dataSource = self
@@ -65,13 +68,13 @@ extension HomeViewController:UITableViewDelegate,UITableViewDataSource {
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let room = presenter.getItem(atIndex: indexPath.row)
-        navigateToListingViewController(room: room)
+        self.presenter.whenRowSelected(room : room)
     }
-    func navigateToListingViewController (room: RoomData) {
-        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
-        let listingViewController = storyBoard.instantiateViewController(identifier: "listingViewController") as! ListingViewController
-        listingViewController.room = room
-        navigationController?.pushViewController(listingViewController, animated: true)
-    }
+    //func navigateToListingViewController (room: RoomData) {
+    //    let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+    //    let listingViewController = storyBoard.instantiateViewController(identifier: "listingViewController") as! ListingViewController
+    //    listingViewController.room = room
+    //    navigationController?.pushViewController(listingViewController, animated: true)
+   // }
     
 }
